@@ -18,7 +18,7 @@ const config = {
     user: process.env.DB_USER || 'xprl',
     password: process.env.DB_PASSWORD || 'xprl123456',
     database: process.env.DB_NAME || 'xprl',
-    ssl: process.env.DB_SSL === 'true' || process.env.DB_SSL === '1',
+    ssl: ['true', '1', 'yes'].includes(String(process.env.DB_SSL || '').toLowerCase().trim()),
   },
 };
 
