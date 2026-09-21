@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+
+# 轨迹与文档
+.trae/
+
+# Docker 持久化
+db/data/

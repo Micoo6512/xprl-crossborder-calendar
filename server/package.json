@@ -1,0 +1,25 @@
+{
+  "name": "xprl-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "跨境选品日历 V1.0 后端服务",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "express-validator": "^7.2.0",
+    "iconv-lite": "^0.7.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.23.0",
+    "xlsx": "^0.18.5"
+  }
+}
