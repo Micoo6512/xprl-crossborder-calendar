@@ -1,0 +1,3 @@
+# SPA 路由回退：所有非静态资源、非 /api 的路径都返回 index.html
+# /api/* 请求由 Pages Functions 处理，优先级高于本规则，不受影响
+/*    /index.html   200

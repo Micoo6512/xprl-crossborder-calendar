@@ -1,0 +1,11 @@
+# Cloudflare Pages 项目配置：noozo（跨境选品日历）
+name = "noozo"
+pages_build_output_dir = "dist"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# 数据库：D1（与 Workers 同机部署）
+[[d1_databases]]
+binding = "DB"
+database_name = "noozo-db"
+database_id = "d818a53b-d544-463e-ba25-20fe9fced202"

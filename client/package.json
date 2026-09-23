@@ -11,8 +11,11 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "axios": "^1.7.9",
+    "bcryptjs": "^3.0.3",
     "dayjs": "^1.11.13",
     "element-plus": "^2.9.1",
+    "hono": "^4.13.8",
+    "iconv-lite": "^0.7.3",
     "pinia": "^2.3.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"

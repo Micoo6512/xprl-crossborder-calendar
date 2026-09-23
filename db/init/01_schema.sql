@@ -54,3 +54,7 @@ CREATE TABLE IF NOT EXISTS orders (
 
 CREATE INDEX IF NOT EXISTS idx_orders_user_id ON orders (user_id);
 CREATE INDEX IF NOT EXISTS idx_orders_status ON orders (status);
+
+-- 同一用户同一方案至多保留一个待支付订单（幂等下单 + 并发兜底）
+CREATE UNIQUE INDEX IF NOT EXISTS uniq_orders_pending_per_user_plan
+  ON orders (user_id, plan_code) WHERE status = 'pending';
